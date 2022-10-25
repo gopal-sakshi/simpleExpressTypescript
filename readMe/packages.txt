@@ -1,0 +1,19 @@
+npm i body-parser cross-env dotenv express helmet rimraf
+
+body-parser 
+    extracts the entire body of an incoming request stream (for Express) and exposes it on req.body
+cross-env
+    sets environment variables without us having to worry about the platform.
+dot-env
+    loads in .env variables into process.env so we can access them inside our *.ts files.
+express 
+    framework for building APIs, such as handling GET, POST, PUT, DELETE requests with ease and building your application around it. 
+    It’s simple and extremely commonly used.
+helmet 
+    adds some sensible default security Headers to your app.
+rimraf 
+    essentially a cross-platform rm -rf for Node.js so we can delete older copies of our dist directory before recompiling a new dist
+
+Most of these packages ship with type definitions for TypeScript
+- @types/node, which are type definitions for Node.js
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,    
+    "strict": true,    
+    "skipLibCheck": true,    
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist23",                 // JS files gets stored here
+    "baseUrl": ".",
+    "paths": {
+      "*": [ "node_modules/*" ]
+    }    
+  },
+  "include": [    // compile any files ending with .ts it finds in the src folder, and store the results in a folder named dist23
+    "src/**/*"
+  ]
+}
+
+
+// https://developer.okta.com/blog/2018/11/15/node-express-typescript
