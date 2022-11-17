@@ -12,9 +12,11 @@
     "--------- about prestart....  BUT what is build23 -------------------------":"----------------------------",
     "prestart": "npm run build23",
     "start": "cross-env NODE_ENV=production node dist23/index.js",
-    "--------- otherStuff -------------------------------------":"----------------------------",
+    "--------- otherStuff1 -------------------------------------":"----------------------------",
     "build": "rimraf dist23 && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "--------- otherStuff2 -------------------------------------":"----------------------------",
+    "rimraf": " alternative to the Linux command rm -rf... deep recursive deletion of files & folders. ",
+    "see readMe folder" : "see readMe folder"
   },
   "keywords": [],
   "author": "",

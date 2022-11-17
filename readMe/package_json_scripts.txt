@@ -1,0 +1,9 @@
+cross-env 
+- npmjs package
+- used to set environment variables inline when running node commands.
+- 
+
+concurrently 
+- npmjs package 
+- to run multiple commands or NPM scripts simultaneously.
+
