@@ -3,7 +3,8 @@ import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 
-dotenv.config();
+var blah = dotenv.config();
+console.log(blah);
 
 const PORT = process.env.PORT || 3011;
 const app: Express = express();

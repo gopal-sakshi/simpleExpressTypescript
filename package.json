@@ -9,6 +9,7 @@
     "--------- about preserve -------------------------------------------":"----------------------",
     "preserve": "npm run build",
     "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist23/index.js\"",
+    "serve23": "cross-env NODE_ENV=development concurrently 'tsc --watch' 'nodemon -q dist23/index.js'",
     "--------- about prestart....  BUT what is build23 -------------------------":"----------------------------",
     "prestart": "npm run build23",
     "start": "cross-env NODE_ENV=production node dist23/index.js",

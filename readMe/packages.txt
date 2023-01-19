@@ -13,7 +13,11 @@ helmet
     adds some sensible default security Headers to your app.
 rimraf 
     essentially a cross-platform rm -rf for Node.js so we can delete older copies of our dist directory before recompiling a new dist
-
+cookie-parser
+    Cookies are simple, small files/data that are sent to client with a server request 
+    they are stored on the client side. 
+    Every time the user loads the website back, this cookie is sent with the request
+    Based on cookie, we get to know who accessed our server & respond with his favourites
 Most of these packages ship with type definitions for TypeScript
 - @types/node, which are type definitions for Node.js
 ------------------------------------------------------------------------------------------------------------------------------------

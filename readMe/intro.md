@@ -35,7 +35,7 @@ Even though code is written in TypeScript, it will be compiled as “vanilla” 
     this option is true by default; 
     it controls interoperability between CommonJS and ES modules. 
     It does this by creating namespace objects for all imports.
-------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 
 Typically, you would npm i -g typescript (the -g means global) 
     it then allows us to run tsc to create a tsconfig.json. 
@@ -43,9 +43,9 @@ Typically, you would npm i -g typescript (the -g means global)
 npx allows us to skip a global install and use tsc within the local project to create a tsconfig.json.
 If we did try to run tsc --init to create a tsconfig.json
     we’d see this error (because typescript would not be available globally, thus tsc also would be unavailable):
-------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 
 # node .
 - runs the file mentioned in 'main' property of package.json
 - generally, default values = `index.js`    `server.js`
-------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
