@@ -1,6 +1,7 @@
 `build`
 - When we npm run build our rimraf package will delete our existing dist folder
-- Then, we run tsc to build our project, which as we know is compiled into dist (remember we specified this in our tsconfig.json). i.e. deletes the old code and replaces it with the new code.
+- Then, we run tsc to build our project, which as we know is compiled into dist (remember we specified this in our tsconfig.json). 
+    deletes the old code and replaces it with the new code.
 
 `preserve`
 - just calls our "build" command
@@ -31,6 +32,8 @@
 - pffft.... What tests.
 -----------------------------------------------------
 
+`tsc --watch`
+- its like nodemon for typescript
 
 `cross-env`
 - CLI that will spawn a process for the command you give it with the environment variables set as you specify in the command.
@@ -46,7 +49,7 @@
     cross-env NODE_ENV=development
     concurrently \"tsc --watch\" \"nodemon -q dist23/index.js\"         \" is just an escape character...
     concurrently "tsc --watch" "nodemon -q dist23/index.js"
-- if u dont like serve, use seve23 ====> it has single quotes
+- if u dont like serve, use serve23 ====> it has single quotes
 
 `cross-env`
 - Most Windows command prompts will choke when you set environment variables with NODE_ENV=production like that.

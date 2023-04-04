@@ -1,0 +1,49 @@
+In the HTTP Headers, X-Powered-By should be omitted. 
+This is because you should never give attackers details about your tech stack. 
+Otherwise, they could use that info to exploit known vulnerabilities in that framework or library.
+
+Content-Security-Policy (CSP)
+- CSP allows you to specify what sources of content a web page is allowed to load and execute.
+- use CSP to block a web page from loading images & iframes from other websites
+
+--------------------------------------------------------------------------------------
+Content-Security-Policy: 
+    default-src 'self';
+    base-uri 'self';
+    font-src 'self' 
+    https: data:;
+    form-action 'self';
+    frame-ancestors 'self';
+    img-src 'self' data:;
+    object-src 'none';
+    script-src 'self';
+    script-src-attr 'none';
+    style-src 'self' https: 'unsafe-inline';
+    upgrade-insecure-requests
+
+With this policy, your web pages cannot load remote fonts or styles. 
+- This is because "font-src", "style-src" are set to self, respectively
+--------------------------------------------------------------------------------------
+
+helmet.contentSecurityPolicy({
+    useDefaults: true,
+    directives: {
+        "font-src": ["'self'", "external-website.com"],        
+        "style-src": null,                                      // allowing styles from any website
+    },
+});
+
+Referrer-Policy HTTP header 
+- defines what data should be sent as referrer information in the Referer header
+- if you click on a link to a third-party website, Referer will contain the address of the current web page. 
+- As a result, the third-party website could use the header to track you or understand what you were visiting.
+
+app.use(
+    helmet.referrerPolicy({
+        policy: "no-referrer",
+    })
+)
+--------------------------------------------------------------------------------------
+
+https://blog.logrocket.com/using-helmet-node-js-secure-application/
+

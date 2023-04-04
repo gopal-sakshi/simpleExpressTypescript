@@ -2,14 +2,14 @@
   "compilerOptions": {
 
     "target": "es2016",
-    "module": "commonjs",
+    "module": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,    
     "strict": true,    
     "skipLibCheck": true,    
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "sourceMap": true,
+    "sourceMap": false,                 // setting it to true ---> generates .map files
     "outDir": "dist23",                 // JS files gets stored here
     "baseUrl": ".",
     "paths": {
