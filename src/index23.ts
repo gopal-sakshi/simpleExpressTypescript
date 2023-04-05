@@ -4,7 +4,6 @@ import helmet from 'helmet';
 import dotenv from 'dotenv';
 
 var blah = dotenv.config();
-console.log(blah);
 
 const PORT = process.env.PORT || 3011;
 const app: Express = express();
@@ -14,13 +13,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /*******************************************************************************************/
-import file23 from './routes11/file23.js';
+import file23 from './routes11/file23';
 app.use('/fileRouter', file23);
 
-console.log('lskdjf;lkdsj');
-
 app.get('/', (req: Request, res: Response) => {
-    res.send('<h1>Hello from the TypeScript world!</h1>');
+    res.send('<h1>Hello world!!!!!!!!!</h1>');
 });
 
 /*******************************************************************************************/

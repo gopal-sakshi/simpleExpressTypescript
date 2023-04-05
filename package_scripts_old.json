@@ -1,0 +1,52 @@
+{
+    "name": "express-typescript",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+      "order_of_steps1": "preserve___serve",
+      "order_of_steps2": "prestart___start",
+      "kill_process": "kill -9 ${lsof -i:3011}",
+      "--------- about preserve -------------------------------------------": "----------------------",
+      "preserve": "npm run build",
+      "serve": "cross-env NODE_ENV=development nodemon dist23/index.js",
+      "serve23": "cross-env NODE_ENV=development concurrently 'tsc --watch' 'node dist23/index.js'",
+      "--------- about prestart....  BUT what is build23 -------------------------": "----------------------------",
+      "prestart": "npm run build23",
+      "start": "cross-env NODE_ENV=production node dist23/index.js",
+      "--------- otherStuff1 -------------------------------------": "----------------------------",
+      "build": "rimraf dist23 && tsc --watch",
+      "--------- otherStuff2 -------------------------------------": "----------------------------",
+      "rimraf": " alternative to the Linux command rm -rf... deep recursive deletion of files & folders. ",
+      "see readMe folder": "see readMe folder",
+      "serve22": "ts-node-dev --respawn ./src/index.ts    // Dont know how to use ts-node (or) ts-node-dev  // IGNORE",
+      "serve19": "babel src -d dist_babel23 --extensions \".ts\" && node dist_babel23/index.js",
+      "serve18":"nodemon src/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@types/body-parser": "^1.19.2",
+      "body-parser": "^1.20.0",
+      "cross-env": "^7.0.3",
+      "dotenv": "^16.0.0",
+      "express": "^4.18.1",
+      "helmet": "^5.0.2",
+      "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.21.0",
+      "@babel/core": "^7.21.4",
+      "@babel/preset-env": "^7.21.4",
+      "@babel/preset-typescript": "^7.21.4",
+      "@types/express": "^4.17.13",
+      "@types/node": "^17.0.31",
+      "concurrently": "^7.1.0",
+      "nodemon": "^2.0.16",
+      "ts-node": "^10.7.0",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^4.6.4"
+    }
+  }
+  

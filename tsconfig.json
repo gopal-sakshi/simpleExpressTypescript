@@ -2,7 +2,7 @@
   "compilerOptions": {
 
     "target": "es2016",
-    "module": "ESNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,    
     "strict": true,    
@@ -16,7 +16,7 @@
       "*": [ "node_modules/*" ]
     }    
   },
-  "include": [    // compile any files ending with .ts it finds in the src folder, and store the results in a folder named dist23
+  "include": [
     "src/**/*"
   ]
 }
