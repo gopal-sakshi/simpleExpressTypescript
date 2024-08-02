@@ -16,9 +16,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 import file23 from './routes11/file23';
 app.use('/fileRouter', file23);
 
+import db23 from './routes11/db23';
+app.use('/db23', db23);
+
+import cities23 from './cities-list/world23.router';
+app.use('/dao-uses', cities23);
+
 app.get('/', (req: Request, res: Response) => {
-    res.send('<h1>Hello world!!!!!!!!!</h1>');
+    res.send('<h1>Hello world23!!!!!!!!!</h1>');
 });
+
 
 /*******************************************************************************************/
 var server23 = app.listen(PORT, () => console.log(`Running on ${PORT} ⚡`))
