@@ -7,7 +7,7 @@ var connection:any;
         port: 13306,
         user: 'root',
         password: '1258',
-        database: 'world24',
+        database: 'world23',
     });
     // IIFE to establish MySQL connection
 })();
